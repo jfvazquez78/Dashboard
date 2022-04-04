@@ -1,75 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="navigation">
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-apple"></i></span>
-              <span class="tittle"><h2>Brand Name</h2></span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-house"></i></span>
-              <span class="tittle">Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-people-fill"></i></span>
-              <span class="tittle">Customers</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-chat-fill"></i></span>
-              <span class="tittle">Message</span>
-            </a>
-          </li>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-question-circle"></i></span>
-              <span class="tittle">Help</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-gear-fill"></i></span>
-              <span class="tittle">Settings</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-lock-fill"></i></span>
-              <span class="tittle">Password</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="bi bi-box-arrow-in-right"></i></span>
-              <span class="tittle">Sing Out</span>
-            </a>
-          </li>
-        </ul>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-apple"></i></span>
+            <span class="tittle">
+              <h2>Brand Name</h2>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="tittle">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-people-fill"></i></span>
+            <span class="tittle">Customers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-chat-fill"></i></span>
+            <span class="tittle">Message</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-question-circle"></i></span>
+            <span class="tittle">Help</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-gear-fill"></i></span>
+            <span class="tittle">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-lock-fill"></i></span>
+            <span class="tittle">Password</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="bi bi-box-arrow-in-right"></i></span>
+            <span class="tittle">Sing Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Search here">
+            <i class="bi bi-search"></i>
+          </label>
+        </div>
+        <div class="user">
+          <img src="./image/user01.jpg">
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+  </div>
+
+
+
+  <script>
+    function toggleMenu() {
+      let toggle = document.querySelector('.toggle');
+      let navigation = document.querySelector('.navigation');
+      let main = document.querySelector('.main');
+      toggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+      main.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
 </html>
