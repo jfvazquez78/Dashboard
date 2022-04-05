@@ -1,152 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-    integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-</head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-apple"></i></span>
+              <span class="tittle">
+                <h2>Brand Name</h2>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-house"></i></span>
+              <span class="tittle">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-people-fill"></i></span>
+              <span class="tittle">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-chat-fill"></i></span>
+              <span class="tittle">Message</span>
+            </a>
+          </li>
 
-<body>
-  <div class="container">
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-apple"></i></span>
-            <span class="tittle">
-              <h2>Brand Name</h2>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-house"></i></span>
-            <span class="tittle">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-people-fill"></i></span>
-            <span class="tittle">Customers</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-chat-fill"></i></span>
-            <span class="tittle">Message</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-question-circle"></i></span>
-            <span class="tittle">Help</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-gear-fill"></i></span>
-            <span class="tittle">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-lock-fill"></i></span>
-            <span class="tittle">Password</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="bi bi-box-arrow-in-right"></i></span>
-            <span class="tittle">Sing Out</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="main">
-      <div class="topbar">
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <div class="search">
-          <label>
-            <input type="text" placeholder="Search here">
-            <i class="bi bi-search"></i>
-          </label>
-        </div>
-        <div class="user">
-          <img src="./image/user01.jpg">
-        </div>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-question-circle"></i></span>
+              <span class="tittle">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-gear-fill"></i></span>
+              <span class="tittle">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-lock-fill"></i></span>
+              <span class="tittle">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="bi bi-box-arrow-in-right"></i></span>
+              <span class="tittle">Sing Out</span>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div class="cardBox">
-        <div class="card">
-          <div>
-            <div class="numbers">1,042</div>
-            <div class="cardName">Daily Views</div>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu();"></div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search here" />
+              <i class="bi bi-search"></i>
+            </label>
           </div>
-          <div class="iconBox">
-            <i class="bi bi-eye-fill"></i>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div>
-            <div class="numbers">82</div>
-            <div class="cardName">Sales</div>
-          </div>
-          <div class="iconBox">
-            <i class="bi bi-eye-fill"></i>
+          <div class="user">
+            <img src="./image/user01.jpg" />
           </div>
         </div>
-        
-        <div class="card">
-          <div>
-            <div class="numbers">208</div>
-            <div class="cardName">Comments</div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,042</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox">
+              <i class="bi bi-eye-fill"></i>
+            </div>
           </div>
-          <div class="iconBox">
-            <i class="bi bi-eye-fill"></i>
+
+          <div class="card">
+            <div>
+              <div class="numbers">82</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">208</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">$6,042</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <i class="bi bi-eye-fill"></i>
+            </div>
           </div>
         </div>
-        
-        <div class="card">
-          <div>
-            <div class="numbers">$6,042</div>
-            <div class="cardName">Earning</div>
+
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>€1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Windows Coolers</td>
+                  <td>€110</td>
+                  <td>Dued</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>€620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>HP Laptop</td>
+                  <td>€6000</td>
+                  <td>Dued</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <td>Apple Watch</td>
+                <td>€680</td>
+                <td>Paid</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>€1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Windows Coolers</td>
+                  <td>€110</td>
+                  <td>Dued</td>
+                  <td><span class="status delivered">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>€620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>HP Laptop</td>
+                  <td>€6000</td>
+                  <td>Dued</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="iconBox">
-            <i class="bi bi-eye-fill"></i>
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user02.jpg"></div></td>
+                  <td><h4>Andrea<br><span>Italy</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user03.jpg"></div></td>
+                  <td><h4>David<br><span>India</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user04.jpg"></div></td>
+                  <td><h4>Maria<br><span>France</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user05.jpg"></div></td>
+                  <td><h4>Paula<br><span>Spanish</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user06.jpg"></div></td>
+                  <td><h4>Jesus<br><span>Japan</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user07.jpg"></div></td>
+                  <td><h4>David<br><span>USA</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user08.jpg"></div></td>
+                  <td><h4>Carmen<br><span>Malasya</span></h4></td>
+                </tr>
+                <tr>
+                  <td width=" 60px"><div class="imgBx"><img src="./image/user09.jpg"></div></td>
+                  <td><h4>Fernando<br><span>England</span></h4></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-
-
-
     </div>
-  </div>
 
-
-
-  <script>
-    function toggleMenu() {
-      let toggle = document.querySelector('.toggle');
-      let navigation = document.querySelector('.navigation');
-      let main = document.querySelector('.main');
-      toggle.classList.toggle('active');
-      navigation.classList.toggle('active');
-      main.classList.toggle('active');
-    }
-  </script>
-
-</body>
-
+    <script>
+      function toggleMenu() {
+        let toggle = document.querySelector(".toggle");
+        let navigation = document.querySelector(".navigation");
+        let main = document.querySelector(".main");
+        toggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
